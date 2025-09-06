@@ -22,6 +22,7 @@ kubectl get <resource-kind> <resource-name>
 View detailed information about the resource:
 ```
 kubectl describe <resource-kind> <resource-name>
+```
 
 Remove resources:
 ```
