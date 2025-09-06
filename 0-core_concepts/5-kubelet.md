@@ -1,0 +1,3 @@
+*Kubelet* - oversees node activities by managing container operations such as starting and stopping containers based on instructions from the master scheduler. Additionally, registers the node with the cluster and monitors the state of pods and the containers. Regularly reports the status of the nodes and its workloads to the *Kubernetes API Server*.
+
+When *Kubelet* receives instructions to run a container or pod, it communicates with the container runtime to download the required image and initiate the container.

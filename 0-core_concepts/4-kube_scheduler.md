@@ -1,0 +1,5 @@
+*Kube scheduler* - its primary responsibility is to assign pods to nodes based on a series of criteria. This ensures that the selected node has sufficient resources and meets any specific requirements.
+
+Scheduler assesses each pod against the available nodes through a two-phase process: filtering and ranking.
+1. Filtering Phase - eliminates nodes that do not meet the pod's resource requirements. For example, nodes that lack sufficient CPU or memory are immediately excluded.
+2. Ranking Phase - comes after filtering phase. It uses a priority function to score and compare the remaining nodes on a scale from 0 to 10, selecting the best match. For instance, if placing a pod on one node would leave six free CPUs (four more than an alternative node), that node is assigned a higher score and is chosen. 
